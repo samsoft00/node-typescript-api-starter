@@ -7,3 +7,5 @@ class Index {
 }
 
 const me = new Index('Testing..');
+
+console.log(me);
