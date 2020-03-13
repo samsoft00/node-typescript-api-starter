@@ -8,4 +8,4 @@ class Index {
 
 const me = new Index('Testing..');
 
-console.log(me);
+// console.log(me);
