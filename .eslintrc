@@ -3,18 +3,18 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["prettier"],
   "extends": [
-    "airbnb",
-    "prettier"
-    // "eslint:recommended",
-    // "plugin:@typescript-eslint/eslint-recommended",
-    // "plugin:@typescript-eslint/recommended"
+    "airbnb-typescript/base"
+    // "prettier/@typescript-eslint"
   ],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "arrow-body-style": 0,
+    "comma-dangle": 0
   },
-  "settings": {
-    "react": {
-      "version": "latest"
-    }
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   }
 }
